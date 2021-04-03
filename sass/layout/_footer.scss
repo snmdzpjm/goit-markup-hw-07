@@ -1,0 +1,135 @@
+.footer {
+  background-color: #2f303a;
+
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__wrapper-adress {
+  margin-right: 70px;
+}
+
+.adress {
+  font-style: normal;
+}
+
+.adress__location {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--third-color-text);
+}
+
+.footer__contacts-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+    margin-top: 9px;
+  }
+}
+
+.footer__contacts-link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--third-color-text);
+  opacity: 0.6;
+}
+
+.footer__title {
+  display: block;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  color: var(--third-color-text);
+}
+
+.footer__social {
+  .social__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--third-color-text);
+  }
+}
+
+.footer__email {
+  margin-left: auto;
+}
+
+// .subscribe-form {
+//   display: flex;
+// }
+
+.footer__input {
+  .footer__email & {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    color: var(--third-color-text);
+  }
+}
+
+.footer__input {
+  .footer__email &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.footer__form-btn {
+  cursor: pointer;
+
+  .footer__email & {
+    position: relative;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--third-color-text);
+    width: 200px;
+    height: 50px;
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    padding: 10px 29px;
+    padding-right: 62px;
+  }
+}
+
+.footer__button-icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}

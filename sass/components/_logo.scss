@@ -1,0 +1,21 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-right: 93px;
+
+  color: var(--main-color-text);
+
+  .footer & {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  &_theme-white {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+}
